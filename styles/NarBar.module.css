@@ -1,0 +1,30 @@
+@media (max-width: 599px) {
+  .StyledNavBar {
+    padding-top: 4rem;
+    /* background-color: green; */
+  }
+}
+@media (min-width: 600px) {
+  .StyledNavBar {
+    padding-top: 5rem;
+    /* background-color: red; */
+  }
+}
+
+.StyledlistItem :hover,
+.StyledlistItem :focus,
+.StyledlistItem :active {
+  color: #ffffff;
+  border-color: #eaeaea;
+  background-color: #0070f3;
+}
+.active {
+  color: red;
+}
+.active :before {
+  background-color: green;
+}
+
+.StyledMaterial {
+  display: none;
+}
