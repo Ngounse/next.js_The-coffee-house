@@ -47,16 +47,15 @@
 //     </div>
 //   );
 // }
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export class Other extends Component {
-  static propTypes = {}
+  static propTypes = {};
 
   render() {
-    return <div></div>
+    return <div></div>;
   }
 }
 
-export default Other
+export default Other;
