@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../../styles/Home.module.css";
-import { Typography } from "@material-ui/core/";
+import { Grid, Paper, Typography } from "@material-ui/core";
 
 const data = [
   {
-    title: "Ice ",
+    title: "Ice late",
     price: "2.00$",
     id: 1,
   },
   {
-    title: "Ice ",
+    title: "Ice Capu",
     price: "2.00$",
     id: 2,
   },
   {
-    title: "Ice ",
+    title: "Ice Amra",
     price: "2.00$",
     id: 3,
   },
   {
-    title: "Ice ",
+    title: "Ice Moka",
     price: "2.00$",
     id: 4,
   },
@@ -32,14 +32,18 @@ const data = [
 
 const CoffeePage = () => {
   return (
-    <div className={styles.grid}>
+    <Grid container direction="row">
+      {/* <div className={styles.g}> */}
       {data.map((item) => (
-        <div key={item.id} className={styles.card}>
-          <h3>{item.title} &rarr;</h3>
-          <p>{item.price}</p>
-        </div>
+        <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}>
+          <div className={styles.card_Item}>
+            <h3>{item.title} &rarr;</h3>
+            <p>{item.price}</p>
+          </div>
+        </Grid>
       ))}
-    </div>
+      {/* </div> */}
+    </Grid>
   );
 };
 

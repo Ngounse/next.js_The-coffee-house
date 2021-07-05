@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import Coffee from "../src/views/Coffee/Coffee";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
+import Link from "next/link";
 
 const CoffeePage = () => {
   return (
@@ -12,7 +13,9 @@ const CoffeePage = () => {
         <title>Coffee</title>
       </Head>
       <h1 className={styles.title}>
-        <a>Coffee !</a>
+        <Link href="/">
+          <a>Coffee !</a>
+        </Link>
       </h1>
       <Coffee />
     </div>

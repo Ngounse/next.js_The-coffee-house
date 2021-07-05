@@ -40,7 +40,7 @@ const Navbar = () => {
   // const handleDrawerClose = () => {
   //   setState({ showDrawer: false });
   // };
-  console.log("showDrawer::::", open);
+  // console.log("showDrawer::::", open);
 
   const menuItems = [
     {
