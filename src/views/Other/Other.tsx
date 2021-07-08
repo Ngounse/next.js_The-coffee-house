@@ -54,7 +54,7 @@ export class Other extends Component {
   static propTypes = {};
 
   render() {
-    return <div></div>;
+    return <div>Comming soons@!</div>;
   }
 }
 

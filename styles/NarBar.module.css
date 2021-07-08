@@ -19,7 +19,7 @@
   background-color: #0070f3;
 }
 .active {
-  color: red;
+  color: #f50057;
 }
 .active :before {
   background-color: green;
