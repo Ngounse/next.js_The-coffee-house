@@ -18,8 +18,23 @@
   border-color: #eaeaea;
   background-color: #0070f3;
 }
+@media (min-width: 900px) {
+  .Narbar_Wrapper {
+    position: absolute;
+    right: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .Narbar_Wrapper {
+    display: none;
+  }
+}
 .active {
   color: #f50057;
+}
+
+.active_Narbar {
+  color: cyan;
 }
 .active :before {
   background-color: green;

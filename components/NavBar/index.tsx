@@ -34,6 +34,7 @@ import GavelOutlinedIcon from "@material-ui/icons/GavelOutlined";
 import GavelIcon from "@material-ui/icons/Gavel";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import FastfoodOutlinedIcon from "@material-ui/icons/FastfoodOutlined";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import useStates from "../../hooks/useState";
 
 const Navbar = () => {
@@ -45,7 +46,7 @@ const Navbar = () => {
   const { open } = state;
 
   const handlerClick = () => {
-    console.log("::::::", menuItems);
+    // console.log("::::::", menuItems);
   };
   // const [open, setOpen] = React.useState(false);
   // const handleDrawerOpen = () => {
@@ -123,25 +124,44 @@ const Navbar = () => {
             <MenuOpenIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Persistent drawer
+            Menu
           </Typography>
+          <div className={styles.Narbar_Wrapper}>
+            {menuItems.map((Items) => (
+              <Link key={Items.text} href={Items.path} passHref>
+                <IconButton color="inherit" aria-label="open drawer" edge="end">
+                  {router.pathname == Items.path ? Items.openIcon : Items.icon}
+                  <ListItemText
+                    className={
+                      router.pathname == Items.path
+                        ? `${styles.active_Narbar}`
+                        : ""
+                    }
+                  >
+                    {Items.text}
+                  </ListItemText>
+                </IconButton>
+              </Link>
+            ))}
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer variant="persistent" anchor="left" open={open}>
         <List>
           <ListItem button onClick={() => setState({ open: false })}>
-            <ListItemIcon>
+            {/* <ListItemIcon>
               <MenuIcon color="primary" />
-            </ListItemIcon>
-            <Typography variant="h6" noWrap>
+            </ListItemIcon> */}
+            <Typography variant="h6" color="primary" noWrap>
               Menu Items
             </Typography>
-            <ListItemIcon />
+            <ListItemIcon></ListItemIcon>
+            <ArrowBackIosIcon color="primary" />
           </ListItem>
         </List>
 
         <List>
-          {menuItems.map((Items, index) => (
+          {menuItems.map((Items) => (
             <Link key={Items.text} href={Items.path} passHref>
               <ListItem button onClick={handlerClick}>
                 <ListItemIcon>
