@@ -102,6 +102,12 @@ const Navbar = () => {
       openIcon: <InfoOutlinedIcon color="secondary" />,
     },
     {
+      text: "Map",
+      path: "/map",
+      icon: <InfoIcon />,
+      openIcon: <InfoOutlinedIcon color="secondary" />,
+    },
+    {
       text: "Other",
       path: "/other",
       icon: <NewReleasesIcon />,
