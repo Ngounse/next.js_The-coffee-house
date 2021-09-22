@@ -35,6 +35,8 @@ import GavelIcon from "@material-ui/icons/Gavel";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import FastfoodOutlinedIcon from "@material-ui/icons/FastfoodOutlined";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import NoteIcon from "@material-ui/icons/Note";
+import NoteOutlinedIcon from "@material-ui/icons/NoteOutlined";
 import useStates from "../../hooks/useState";
 
 const Navbar = () => {
@@ -100,6 +102,12 @@ const Navbar = () => {
       path: "/about",
       icon: <InfoIcon />,
       openIcon: <InfoOutlinedIcon color="secondary" />,
+    },
+    {
+      text: "Todo",
+      path: "/todo",
+      icon: <NoteIcon />,
+      openIcon: <NoteOutlinedIcon color="secondary" />,
     },
     {
       text: "Map",

@@ -1,0 +1,19 @@
+.add__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.padding_line_14px {
+  padding: 7px 0;
+}
+.padding_card_14px {
+  padding: 7px;
+}
+.close__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.padding_card_text {
+  padding: 7px;
+  height: 120px;
+  overflow: auto;
+}
