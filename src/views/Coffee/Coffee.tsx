@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../../styles/Home.module.css";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Paper, Typography } from "@mui/material";
 
 const data = [
   {

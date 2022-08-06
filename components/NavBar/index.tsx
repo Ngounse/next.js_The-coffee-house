@@ -15,26 +15,26 @@ import {
   ListItemIcon,
   ListItemText,
   Drawer,
-} from "@material-ui/core";
-import { AddCircleOutlineOutlined, SubjectOutlined } from "@material-ui/icons";
-import MenuOpenIcon from "@material-ui/icons/MenuOpen";
-import MenuIcon from "@material-ui/icons/Menu";
-import LocalCafeIcon from "@material-ui/icons/LocalCafe";
-import LocalCafeOutlinedIcon from "@material-ui/icons/LocalCafeOutlined";
-import EmojiFoodBeverageIcon from "@material-ui/icons/EmojiFoodBeverage";
-import EmojiFoodBeverageOutlinedIcon from "@material-ui/icons/EmojiFoodBeverageOutlined";
-import MenuOutlinedIcon from "@material-ui/icons/MenuOutlined";
-import InfoIcon from "@material-ui/icons/Info";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
-import NewReleasesOutlinedIcon from "@material-ui/icons/NewReleasesOutlined";
-import NewReleasesIcon from "@material-ui/icons/NewReleases";
-import LocalDiningOutlinedIcon from "@material-ui/icons/LocalDiningOutlined";
-import LocalDiningIcon from "@material-ui/icons/LocalDining";
-import GavelOutlinedIcon from "@material-ui/icons/GavelOutlined";
-import GavelIcon from "@material-ui/icons/Gavel";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
-import FastfoodOutlinedIcon from "@material-ui/icons/FastfoodOutlined";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+} from "@mui/material";
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import GavelIcon from '@mui/icons-material/Gavel';
+import GavelOutlinedIcon from '@mui/icons-material/GavelOutlined';
+import InfoIcon from '@mui/icons-material/Info';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
+import NewReleasesOutlinedIcon from '@mui/icons-material/NewReleasesOutlined';
+import EmojiFoodBeverageIcon from '@mui/icons-material/EmojiFoodBeverage';
+import EmojiFoodBeverageOutlinedIcon from '@mui/icons-material/EmojiFoodBeverageOutlined';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import LocalDiningOutlinedIcon from '@mui/icons-material/LocalDiningOutlined';
+import LocalCafeIcon from '@mui/icons-material/LocalCafe';
+import LocalCafeOutlinedIcon from '@mui/icons-material/LocalCafeOutlined';
+import SubjectIcon from '@mui/icons-material/Subject';
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+
 import useStates from "../../hooks/useState";
 
 const Navbar = () => {
@@ -60,14 +60,14 @@ const Navbar = () => {
   const menuItems = [
     {
       text: "Home",
-      icon: <SubjectOutlined />,
+      icon: <SubjectIcon/>,
       openIcon: <MenuOutlinedIcon color="secondary" />,
       path: "/",
     },
     {
       text: "Coffee",
-      icon: <LocalCafeIcon />,
-      openIcon: <LocalCafeOutlinedIcon color="secondary" />,
+      icon: <LocalCafeIcon/>,
+      openIcon: <LocalCafeOutlinedIcon color="secondary" /> ,
       path: "/coffee",
     },
     {
@@ -162,7 +162,7 @@ const Navbar = () => {
               Menu Items
             </Typography>
             <ListItemIcon></ListItemIcon>
-            <ArrowBackIosIcon color="primary" />
+            {/* <ArrowBackIosIcon color="primary" /> */}
           </ListItem>
         </List>
 

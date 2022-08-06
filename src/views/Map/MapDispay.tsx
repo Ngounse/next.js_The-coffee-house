@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import mapboxgl from "mapbox-gl";
+// import PropTypes from "prop-types";
+// import mapboxgl from "mapbox-gl";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import ReactMapboxGl from "react-mapbox-gl";
 import styles from "../../../styles/MapBoxG.module.css";
 import useStates from "../../../hooks/useState";
-import { Height } from "@material-ui/icons";
+import HeightIcon from '@mui/icons-material/Height';
 import * as parkData from "../../data/skateboard-parks.json";
 import handler from "../../../pages/api/hello";
 
