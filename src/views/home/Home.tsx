@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import { Grid, Paper } from "@material-ui/core";
+import Grid from '@mui/material/Grid';
 
 const Home = () => {
   return (
