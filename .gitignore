@@ -56,3 +56,6 @@ Thumbs.db
 *cypress/results/*.csv
 *cypress/results/*/*.csv
 cypress/*/*/*.csv
+
+
+.next
