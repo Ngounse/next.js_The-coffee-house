@@ -8,7 +8,6 @@ import Link from "next/link";
 const SnackPage = () => {
   return (
     <div>
-      <NavBar />
       <Head>
         <title>Snack</title>
       </Head>
