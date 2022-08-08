@@ -8,7 +8,6 @@ import Link from "next/link";
 const NonCoffee = () => {
   return (
     <div>
-      <NavBar />
       <Head>
         <title>NonCoffee</title>
       </Head>

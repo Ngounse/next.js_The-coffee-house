@@ -4,11 +4,11 @@ import Coffee from "../src/views/Coffee/Coffee";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Link from "next/link";
+import Layout from "../components/Layout";
 
 const CoffeePage = () => {
   return (
-    <div>
-      <NavBar />
+    <>
       <Head>
         <title>Coffee</title>
       </Head>
@@ -18,7 +18,7 @@ const CoffeePage = () => {
         </Link>
       </h1>
       <Coffee />
-    </div>
+    </>
   );
 };
 

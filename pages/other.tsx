@@ -8,7 +8,6 @@ import Link from "next/link";
 const OtherPage = () => {
   return (
     <div>
-      <NavBar />
       <Head>
         <title>Other</title>
       </Head>
