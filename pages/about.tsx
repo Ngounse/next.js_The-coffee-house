@@ -8,7 +8,6 @@ import Link from "next/link";
 const AboutPage = () => {
   return (
     <div>
-      <NavBar />
       <Head>
         <title>About</title>
       </Head>
